@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cassi Lochhaas, PhD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Cassi Lochhaas, PhD</a></h1>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="current">
+								<a href="#">Research</a>
+								<ul>
+									<li><a href="research_accretion.html">Galactic Accretion through the CGM</a></li>
+									<li><a href="research_feedback.html">Stellar Feedback in Galaxy Simulations</a></li>
+									<li><a href="research_nonequilibrium.html">Non-Equilibrium CGM</a></li>
+									<li><a href="research_winds.html">Galactic Winds</a></li>
+								</ul>
+							</li>
+							<li><a href="curriculum_vitae.html">Curriculum Vitae</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2>Non-Equilibrium CGM</h2>
+										<p>What common analytic models accurately describe the simulated CGM?</p>
+									</header>
+
+                                    <p>As part of a Hubble Space Telescope Archive Research Theory grant (#16140, PI Lochhaas), we investigated
+                                        the degree of hydrostatic equilibrium in the CGM of L* galaxy halos using the FOGGIE simulations discussed
+                                        above in "Figuring Out Gas & Galaxies in Enzo VI: The Circumgalactic Medium of L* Galaxies is Supported in
+                                        an Emergent, Non-Hydrostatic Equilibrium" (<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...948...43L/abstract">here</a>).
+                                        I developed a new way to visualize the contribution of different types of pressures and gas motions to support
+                                        against gravity: quantifying the forces acting on the CGM gas (i.e. pressure gradients) rather than simply
+                                        examining pressures. This allowed me to include rotational support, which has no associated pressure, into the
+                                        full force balance of all physical processes supporting gas in the CGM, which also includes thermal pressure,
+                                        turbulent pressure, and ram pressure. We found that approximate hydrostatic equilibrium, where the thermal
+                                        pressure of gas supports it against gravity, only holds in the outskirts of the CGM and only at low redshift.
+                                        In the inner CGM, turbulent pressure and rotational support are just as important to supporting the CGM gas
+                                        against gravity as the thermal pressure. Importantly, we found that the force acting on CGM gas varies significantly
+                                        on scales of ~3-5 kpc! This means that a given parcel of CGM gas cannot be said to be in any state of equilibrium,
+                                        not hydrostatic nor an equilibrium that includes forces from dynamic gas motions. The below image shows a slice
+                                        through the CGM of one of the FOGGIE galaxies at z = 0, color-coded by the net force (sum of thermal, turbulent,
+                                        ram pressure, rotation, and gravity) acting on the CGM gas.</p>
+
+                                    <img src="images/total_force_slice.png" alt="A slice showing the net force acting on CGM gas." width="800">
+
+                                    <p>In "Figuring Out Gas & Galaxies In Enzo (FOGGIE) V: The Virial Temperature Does Not Describe Gas in a Virialized Galaxy Halo"
+                                        (<a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210208393L/abstract">here</a>), we used the FOGGIE simulations
+                                        discussed above to show that the gas in the outskirts of a L* galaxy halo is a factor of two cooler than the standard
+                                        assumed virial temperature, which is commonly used to interpret observations of the CGM. The virial temperature assumes
+                                        a balance between potential and kinetic energies of the halo gas (i.e., that the halo is "virialized"), and also assumes
+                                        that the kinetic energy is purely thermal. An energy budget accounting of the gas in the outskirts of the halo shows
+                                        that there are roughly equal amounts of thermal and non-thermal kinetic energy, proving the assumption behind the standard
+                                        virial temperature faulty. We derived a new, modified virial temperature that accounts for the non-thermal gas motions in
+                                        the energy balance (while still showing that the halo is, in fact, virialized) and showed it matches the temperature of the
+                                        bulk of halo gas better than the standard assumed virial temperature. The figure shows a histogram of temperature (more
+                                        mass in darker regions) over time as the halo evolves for one of the FOGGIE galaxies, with the standard virial temperature
+                                        (orange dashed line) overestimating the temperature of most of the gas mass, especially near z=0, and the modified virial
+                                        temperature (red solid line) better matching the simulated temperature. This points to a shift in the way we should be
+                                        thinking about the CGM: the halo is not simply filled with a static, hot halo at the virial temperature, but instead has a
+                                        significant amount of gas dynamic motions and non-thermal kinetic energy that drive the overall structure and balance of the
+                                        halo gas. A factor of two cooler CGM than expected has some important observational implications: the primary ions will be
+                                        observed in UV rather than X-ray, and there may be higher cool gas production than expected, explaining the abundance of cool
+                                        gas observed. In addition, the mass of hot gas in the CGM is frequently estimated by extrapolating X-ray surface brightness
+                                        profiles to the virial radius, but this study shows that the CGM does not maintain its high temperature in the outskirts of
+                                        the CGM and thus the mass of hot gas inferred may be incorrect. </p>
+
+                                    <img src="images/T_vs_time_Tvir.png" alt="A histogram of temperature as a function of time as the galaxy and CGM evolve" width="800">
+
+                                    <p>Another of my recent papers, "Properties of the Simulated Circumgalactic Medium" (which can be found
+                                        <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.1461L/abstract">here</a>) uses the idealized CGM simulations of
+                                        <a href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.466.3810F/abstract">Fielding et al. (2017)</a> to determine the overall
+                                        properties of the simulated CGM. These simulations, despite being idealized and spherically-symmetric, are high-resolution and
+                                        allow us to probe physical processes without the additional complications of a fully cosmological model. Using these simulations,
+                                        we showed how the CGM is dominated by its gas motions -- bulk galactic outflows and inflows, as well as the turbulence they
+                                        induce. By considering the impact these motions have on the support of the CGM gas against gravity, we found that a 10<sup>12</sup>
+                                        solar mass dark matter halo is in dynamical pressure equilibrium, as expected from traditional models of galaxy formation, but a
+                                        lower-mass 10<sup>11</sup> solar mass dark matter halo is not in equilibrium at all (see figure below). This suggests that the
+                                        kinematic properties of CGM gas are important to understanding the overall structure in the CGM, especially for low-mass galaxies,
+                                        but even for high-mass galaxies where we might expect the standard paradigm of galaxy formation theory to hold, too. This project
+                                        began at the <a href="https://kspa.soe.ucsc.edu/archives/2018">Kavli Summer Program in Astrophysics</a> the summer of 2018, which
+                                        took place at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">Center for Computational
+                                        Astrophysics at the Flatiron Institute</a> and where I had the opportunity to work with <a href="http://user.astro.columbia.edu/~gbryan/Site/home.html">
+                                        Professor Greg L. Bryan</a> of Columbia University and the CCA. A video of my presentation as part of this program can be found
+                                        <a href="https://drive.google.com/file/d/1PotS-LwjP8xOv6QJKVmXX168bxycV1dO/view">here</a>.</p>
+                                    
+                                    <img src="images/E_param_vs_r.png" alt="A plot showing equilibrium parameter as a function of galactocentric radius in the simulated CGM" width="500">
+                                    
+                                    <p>The above plots show the "equilibrium parameter", which is a measure of how close to equilibrium the CGM is, as a function of
+                                        galactocentric radius in two idealized simulations of two different mass dark matter halos. The high-mass halo, especially the hot gas,
+                                        is in equilibrium, while the cold gas is not. The low-mass halo is not in equilibrium anywhere and is dominated by the bulk flows of
+                                        both its warm and cold gas. Figure is from <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.1461L/abstract">Lochhaas et al. (2020)</a>.</p>
+
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-4 col-4 col-4">
+							<h3><a href="mailto:clochhaas@cfa.harvard.edu">clochhaas@cfa.harvard.edu</a></h3>
+						</section>
+						<section class="col-4 col-4 col-4">
+							<a href="https://www.cfa.harvard.edu/" class="image center center"><img src="images/CfA_Horizontal_CMYK.png" alt="Center for Astrophysics | Harvard & Smithsonian" width="300"/></a>
+						</section>
+						<section class="col-4 col-4 col-4">
+							<h3>60 Garden St., Cambridge, MA 02138</h3>
+						</section>
+					</div>
+				</div>
+
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; Cassi Lochhaas. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
