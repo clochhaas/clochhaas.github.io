@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cassi Lochhaas, PhD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Cassi Lochhaas, PhD</a></h1>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="current">
+								<a href="#">Research</a>
+								<ul>
+									<li><a href="research_turbulence.html">Mock Observations of CGM Turbulence</a></li>
+									<li><a href="research_emission.html">O VI Emission from the CGM</a></li>
+									<li><a href="research_accretion.html">Galactic Accretion through the CGM</a></li>
+									<li><a href="research_feedback.html">Stellar Feedback in Galaxy Simulations</a></li>
+									<li><a href="research_nonequilibrium.html">Non-Equilibrium CGM</a></li>
+									<li><a href="research_winds.html">Galactic Winds</a></li>
+								</ul>
+							</li>
+							<li><a href="curriculum_vitae.html">Curriculum Vitae</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2>Mock Observations of CGM Turbulence</h2>
+										<p>How do absorption and emission observations trace turbulence?</p>
+									</header>
+
+									<p>Observations of the circumgalactic medium in both absorption and emission have found suggestions of nonthermal gas motions. 
+										In absorption, this manifests as non-thermal broadening of absorption lines. In emission maps, this manifests as variations 
+										in line-of-sight velocity across different locations in a galaxy's CGM that do not appear to be tracing large-scale motions 
+										like rotation. Disordered motions in the CGM (i.e., not part of bulk inflows or outflows or rotation) could be tracing turbulence.
+									</p>
+
+                                    <p>Using the FOGGIE simulations, I have been finding that the strength of CGM turbulence may be related to the strength of stellar 
+										feedback, especially in the hot gas that directly tracks the outflows launched by feedback. In addition, turbulence is stronger 
+										closer to the galaxy (see <a href=research_nonequilibrium.html">my previous papers on how turbulence affects the CGM</a>). But how 
+										can we infer the strength and properties of turbulence from CGM observations to compare to simulations?
+									</p>
+
+									<img src="images/turbulence_time.png" alt="A projection of CGM turbulent velocities and the time-evolution of these velocities." width="1000">
+
+									<p>I recently worked with Naija Bruckner, a senior at Rice University, on a project to investigate how well non-thermal broadening
+										of absorption lines matches the full 3D turbulence dynamics. Naija used synthetic absorption lines created by shooting rays through 
+										the FOGGIE simulations to determine the non-thermal broadening, and compared this "measured" turbulence to the "true" 3D turbulence 
+										in the simulated CGM. We found that while the broadening of absorption lines matched the 1D velocity dispersion along the line of sight 
+										fairly well (as expected), they did not correlate well at all with the full 3D turbulence measurements. This means that absorbers or specific ions
+										(we examined C II and O VI) are disconnected from the larger turbulent flows, the 1D skewer does not capture enough information about 
+										the broader turbulence, or both. We are now examining if the spread of velocities among absorption components, instead of the individual 
+										absorbers' turbulent broadening, might better capture the CGM turbulence. 
+									</p>
+
+                                    <img src="images/bturb_vturb.png" alt="The relationship between absorber turbulent broadening and 3D turbulence in the simulation." width="500">
+
+                                    <p>I've also been working with Helena Bouchereau, a senior at Northeastern University, to probe the properties of turbulence with emission maps.
+										Helena created emission-weighted velocity maps from the FOGGIE simulations and then computed velocity structure functions (VSFs) from the 
+										velocity maps. A VSF is computed as the difference in velocities between pairs of points, as a function of distance between the points in the pair. 
+										By analyzing the slope and the location of a turn-over or flattening of the VSF, we can determine the type of turbulence and the characteristic 
+										scale at which the turbulence is being driven. We've found that mock emission-weighted VSFs are quite similar to "true" VSFs computed from the 
+										full 3D information in the simulation, except that the location of the turnover, from which we infer the driving scale, tends to be smaller 
+										in the mock observations than in the full simulation. This is because the emission-weighted VSF is biased in two ways: first, emission picks out 
+										the densest gas, so it will be weighted towards the turbulence of the dense gas; and second, the measurement of the driving scale is limited to 
+										where emission is strong enough to be detected. If the emission region isn't large enough to capture the true driving scale of the turbulence, 
+										then a smaller, incorrect driving scale will be inferred. We also discovered that in FOGGIE, turbulence is stronger, with a smaller driving scale, 
+										close to the galaxy while it is weaker, with a larger driving scale, further away.
+									</p>
+
+                                    <img src="images/VSF.png" alt="Velocity structure functions of CGM gas in radial shells." width="500">
+
+                                    <p>These studies show that CGM turbulence properties can be determined from observations, but there are some important biases to take into account!</p>
+                                    
+
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-4 col-4 col-4">
+							<h3><a href="mailto:clochhaas@cfa.harvard.edu">clochhaas@cfa.harvard.edu</a></h3>
+						</section>
+						<section class="col-4 col-4 col-4">
+							<a href="https://www.cfa.harvard.edu/" class="image center center"><img src="images/CfA_Horizontal_CMYK.png" alt="Center for Astrophysics | Harvard & Smithsonian" width="300"/></a>
+						</section>
+						<section class="col-4 col-4 col-4">
+							<h3>60 Garden St., Cambridge, MA 02138</h3>
+						</section>
+					</div>
+				</div>
+
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; Cassi Lochhaas. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

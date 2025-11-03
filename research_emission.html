@@ -52,36 +52,38 @@
 
 								<article>
 									<header>
-										<h2>Stellar Feedback in Galaxy Simulations</h2>
-										<p>How do galactic outflows drive CGM kinematics?</p>
+										<h2>O VI Emission from the CGM</h2>
+										<p>What are the properties of O VI-bright gas?</p>
 									</header>
-									
-									<p>Because cosmological simulations cannot reach high enough resolution to self-consistently model the 
-										formation of individual stars, the formation and feedback processes from stars must be implemented
-										as "subgrid" models. There are many choices to make for the parameters of these models: How dense should
-										simulated gas get before it starts collapsing into stars? How massive should the newly-formed "star particles",
-										representing clusters of stars, be? How much mass, heat, metals, and kinetic energy should each star cluster return
-										to its surroundings (feedback)? For simulators, these questions are typically answered with whatever parameters
-										end up producing "realistic" galaxies that follow the well-defined observed scaling relations, such as the 
-										stellar mass-halo mass relation and the mass-metallicity relation.
+
+									<p>We are on the cusp of a revolution in circumgalactic medium observations: new technology has recently been developed that improves
+										the sensitivity of UV telescopes so significantly that small instruments, like CubeSats, will soon be able to detect UV emission from
+										the CGM of nearby galaxies. Aspera is one of the first such small telescopes to be developed and will be launched in 2026, but several 
+										more are in the pipeline. With extraordinary new data coming soon, we must use simulations to understand how to interpret this new data.
 									</p>
 
-									<p>I am currently leading the effort to investigate different subgrid models for star formation and feedback
-										within the framework of the existing Figuring Out Gas & Galaxies In Enzo (<a href="https://foggie.science">FOGGIE</a>)
-										simulations. These are cosmological zoom-in simulations that resolve the circumgalactic medium (CGM) to a high degree,
-										but still require prescriptions for star formation and feedback inside the galaxies themselves. The primary goal of this
-										project is to determine the star formation and feedback parameters to use for the next generation of the simulations at
-										even higher resolution, while improving on the realism of the simulated galaxies.
+									<p>In a recent paper, "Figuring Out Gas & Galaxies In Enzo (FOGGIE) XI: Circumgalactic O VI Emission Traces Clumpy Inflowing Recycled Gas" 
+										(<a href="https://ui.adsabs.harvard.edu/abs/2025arXiv251025844L/abstract">here</a>), I used the FOGGIE simulations to generate 
+										predictions of O VI emission from the CGM of Milky Way-like galaxies. O VI is highly ionized, likely tracing warm gas, and has one of 
+										the strongest atomic transitions that we can detect in the UV. Combined with the fact that oxygen is one of the most prevalent elements, 
+										O VI is detected in absorption nearly ubiquitously in the CGM of many galaxies. Absorption gives only 1-dimensional information along 
+										the line of sight, so being able to map O VI in emission in 2D will provide much more information about how widespread this gas this.
 									</p>
 
-									<p>The other goal of this project to investigate feedback prescriptions in FOGGIE is to determine how different forms
-										of stellar feedback drive the kinematics in the highly-resolved CGM. Gas kinematics like turbulence
-										<a href="research_nonequilibrium.html">are responsible for driving the CGM away from equilibrium models</a>, but it is
-										not yet clear exactly how turbulence and other kinematics are driven. By exploring a number of different feedback parameters
-										and measuring the CGM turbulence, I hope to develop an understanding of how the driving of CGM kinematics are linked to
-										processes occurring within the galaxy.
+                                    <img src="images/emission_maps.png" alt="Projections of gas density and O VI surface brightness from three FOGGIE galaxies." width="700">
+
+                                    <p>I found that O VI emission is brightest in small, structured regions close to galaxies, where the gas is both warm enough for O VI
+										and dense enough for strong emission (emission scales as density-squared, so it tends to trace denser gas phases). These structures 
+										appear "bubble-like" and could be highlighting warm gas shells surrounding 
+										colder gas. I also found the brightest O VI is also predominantly inflowing onto the galaxy and galaxies with higher star formation 
+										rates have brighter and more wide-spread O VI emission in their CGMs. This suggests that O VI is tracing a clumpy galactic fountain, 
+										where feedback from star formation enriches the CGM with metals, including oxygen, and this material later condenses into dense gas 
+										that falls back onto the galaxy and glows in O VI as it does so.
 									</p>
-                                    
+
+                                    <img src="images/inflows_SFR.png" alt="O VI surface brightness profiles of inflowing and outflowing gas, and O VI brightness vs. SFR." width="1000">
+
+                                    <p>When the first data from new CGM emission instruments begin rolling in, we know that we will be witnessing galactic fountains at work!</p>
 
 								</article>
 
